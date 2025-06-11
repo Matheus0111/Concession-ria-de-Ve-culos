@@ -5,15 +5,14 @@ from enum import Enum
 
 
 class Cargo(str, Enum):
-    DESENVOLVEDOR = "Desenvolvedor"
-    ANALISTA = "Analista"
-    GERENTE = "Gerente"
+    VENDEDOR = "Vendedor"
+    GERENTE_VENDAS = "Gerente de Vendas"
+    FINANCEIRO = "Financeiro"
+    ADMINISTRATIVO = "Administrativo"
+    MECANICO = "Mecânico"
+    RECEPCIONISTA = "Recepcionista"
     DIRETOR = "Diretor"
     ESTAGIARIO = "Estagiário"
-    ADMINISTRATIVO = "Administrativo"
-    RECURSOS_HUMANOS = "Recursos Humanos"
-    FINANCEIRO = "Financeiro"
-    SUPORTE = "Suporte"
     OUTROS = "Outros"
 
 
@@ -36,7 +35,7 @@ class Funcionario(BaseModel):
                 "email": "joao@example.com",
                 "data_nascimento": "1990-01-01",
                 "telefone": "(11) 98765-4321",
-                "cargo": "Desenvolvedor",
+                "cargo": "Vendedor",
                 "data_contratacao": "2021-03-15",
                 "salario": 5000.00
             }
