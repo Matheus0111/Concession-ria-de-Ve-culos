@@ -1,0 +1,184 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-06-07T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2024.2.0",
+  "resources": [
+    {
+      "_id": "wrk_1",
+      "name": "Concessionária de Veículos",
+      "description": "Coleção de requisições para a API da Concessionária de Veículos",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_1",
+      "parentId": "wrk_1",
+      "name": "Base Environment",
+      "data": {
+        "base_url": "https://concession-ria-de-ve-culos.onrender.com/api"
+      },
+      "_type": "environment"
+    },
+    {
+      "_id": "req_funcionarios_list",
+      "parentId": "wrk_1",
+      "name": "Listar Funcionários",
+      "method": "GET",
+      "url": "{{ base_url }}/funcionarios",
+      "_type": "request"
+    },
+    {
+      "_id": "req_funcionarios_create",
+      "parentId": "wrk_1",
+      "name": "Criar Funcionário",
+      "method": "POST",
+      "url": "{{ base_url }}/funcionarios",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"João Vendedor\",\n  \"email\": \"joao@vendedor.com\",\n  \"cargo\": \"Vendedor\",\n  \"data_contratacao\": \"2024-06-01\",\n  \"salario\": 5000.00\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_funcionarios_update",
+      "parentId": "wrk_1",
+      "name": "Atualizar Funcionário",
+      "method": "PUT",
+      "url": "{{ base_url }}/funcionarios/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Maria Gerente\",\n  \"email\": \"maria@gerente.com\",\n  \"cargo\": \"Gerente de Vendas\",\n  \"data_contratacao\": \"2024-06-02\",\n  \"salario\": 12000.00\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_funcionarios_delete",
+      "parentId": "wrk_1",
+      "name": "Remover Funcionário",
+      "method": "DELETE",
+      "url": "{{ base_url }}/funcionarios/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_veiculos_list",
+      "parentId": "wrk_1",
+      "name": "Listar Veículos",
+      "method": "GET",
+      "url": "{{ base_url }}/veiculos",
+      "_type": "request"
+    },
+    {
+      "_id": "req_veiculos_create",
+      "parentId": "wrk_1",
+      "name": "Criar Veículo",
+      "method": "POST",
+      "url": "{{ base_url }}/veiculos",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla\",\n  \"ano\": 2022,\n  \"tipo\": \"Carro\",\n  \"preco\": 120000.00,\n  \"disponivel\": true\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_veiculos_update",
+      "parentId": "wrk_1",
+      "name": "Atualizar Veículo",
+      "method": "PUT",
+      "url": "{{ base_url }}/veiculos/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla XRS\",\n  \"ano\": 2023,\n  \"tipo\": \"Carro\",\n  \"preco\": 130000.00,\n  \"disponivel\": false\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_veiculos_delete",
+      "parentId": "wrk_1",
+      "name": "Remover Veículo",
+      "method": "DELETE",
+      "url": "{{ base_url }}/veiculos/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_clientes_list",
+      "parentId": "wrk_1",
+      "name": "Listar Clientes",
+      "method": "GET",
+      "url": "{{ base_url }}/clientes",
+      "_type": "request"
+    },
+    {
+      "_id": "req_clientes_create",
+      "parentId": "wrk_1",
+      "name": "Criar Cliente",
+      "method": "POST",
+      "url": "{{ base_url }}/clientes",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Carlos Souza\",\n  \"email\": \"carlos@cliente.com\",\n  \"telefone\": \"(11) 99999-8888\",\n  \"cpf\": \"123.456.789-00\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_clientes_update",
+      "parentId": "wrk_1",
+      "name": "Atualizar Cliente",
+      "method": "PUT",
+      "url": "{{ base_url }}/clientes/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Carlos Atualizado\",\n  \"email\": \"carlos@atualizado.com\",\n  \"telefone\": \"(11) 98888-7777\",\n  \"cpf\": \"123.456.789-00\"\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_clientes_delete",
+      "parentId": "wrk_1",
+      "name": "Remover Cliente",
+      "method": "DELETE",
+      "url": "{{ base_url }}/clientes/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_vendas_list",
+      "parentId": "wrk_1",
+      "name": "Listar Vendas",
+      "method": "GET",
+      "url": "{{ base_url }}/vendas",
+      "_type": "request"
+    },
+    {
+      "_id": "req_vendas_create",
+      "parentId": "wrk_1",
+      "name": "Criar Venda",
+      "method": "POST",
+      "url": "{{ base_url }}/vendas",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"veiculo_id\": 1,\n  \"cliente_id\": 1,\n  \"funcionario_id\": 1,\n  \"data_venda\": \"2024-06-01\",\n  \"valor_venda\": 118000.00\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_vendas_update",
+      "parentId": "wrk_1",
+      "name": "Atualizar Venda",
+      "method": "PUT",
+      "url": "{{ base_url }}/vendas/1",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"veiculo_id\": 2,\n  \"cliente_id\": 2,\n  \"funcionario_id\": 2,\n  \"data_venda\": \"2024-06-02\",\n  \"valor_venda\": 108000.00\n}"
+      },
+      "_type": "request"
+    },
+    {
+      "_id": "req_vendas_delete",
+      "parentId": "wrk_1",
+      "name": "Remover Venda",
+      "method": "DELETE",
+      "url": "{{ base_url }}/vendas/1",
+      "_type": "request"
+    }
+  ]
+} 
