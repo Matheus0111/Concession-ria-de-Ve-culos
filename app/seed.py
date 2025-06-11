@@ -15,7 +15,7 @@ def seed_database():
             email="maria@exemplo.com",
             data_nascimento=date(1985, 5, 15),
             telefone="(21) 99876-5432",
-            cargo=Cargo.GERENTE,
+            cargo=Cargo.GERENTE_VENDAS,
             data_contratacao=date(2018, 3, 10),
             salario=12500.00
         ),
@@ -24,7 +24,7 @@ def seed_database():
             email="carlos@exemplo.com",
             data_nascimento=date(1992, 8, 22),
             telefone="(11) 91234-5678",
-            cargo=Cargo.DESENVOLVEDOR,
+            cargo=Cargo.VENDEDOR,
             data_contratacao=date(2020, 7, 15),
             salario=7800.00
         ),
@@ -33,7 +33,7 @@ def seed_database():
             email="ana@exemplo.com",
             data_nascimento=date(1978, 3, 10),
             telefone="(31) 98765-4321",
-            cargo=Cargo.ANALISTA,
+            cargo=Cargo.ADMINISTRATIVO,
             data_contratacao=date(2019, 1, 5),
             salario=6500.00
         ),
@@ -42,7 +42,7 @@ def seed_database():
             email="pedro@exemplo.com",
             data_nascimento=date(1990, 11, 27),
             telefone="(11) 97777-8888",
-            cargo=Cargo.DESENVOLVEDOR,
+            cargo=Cargo.VENDEDOR,
             data_contratacao=date(2021, 3, 10),
             salario=7200.00
         ),
@@ -51,7 +51,7 @@ def seed_database():
             email="juliana@exemplo.com",
             data_nascimento=date(1988, 4, 15),
             telefone="(21) 96666-7777",
-            cargo=Cargo.RECURSOS_HUMANOS,
+            cargo=Cargo.RECEPCIONISTA,
             data_contratacao=date(2017, 8, 22),
             salario=5900.00
         ),
@@ -69,7 +69,7 @@ def seed_database():
             email="mariana@exemplo.com",
             data_nascimento=date(1995, 7, 8),
             telefone="(31) 94444-5555",
-            cargo=Cargo.ANALISTA,
+            cargo=Cargo.ADMINISTRATIVO,
             data_contratacao=date(2022, 5, 2),
             salario=6200.00
         ),
@@ -87,7 +87,7 @@ def seed_database():
             email="camila@exemplo.com",
             data_nascimento=date(1993, 6, 12),
             telefone="(21) 92222-3333",
-            cargo=Cargo.DESENVOLVEDOR,
+            cargo=Cargo.VENDEDOR,
             data_contratacao=date(2021, 9, 15),
             salario=7500.00
         ),
@@ -96,7 +96,7 @@ def seed_database():
             email="lucas@exemplo.com",
             data_nascimento=date(1991, 12, 5),
             telefone="(31) 91111-2222",
-            cargo=Cargo.SUPORTE,
+            cargo=Cargo.MECANICO,
             data_contratacao=date(2020, 4, 20),
             salario=4800.00
         )
